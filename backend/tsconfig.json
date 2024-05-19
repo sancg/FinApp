@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "outDir": "./build",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      // Ths would overwrite the behavior of tsc
+      //"module": "commonjs"
+    }
+  },
+  "include": ["api/**/*.ts"],
+  "exclude": ["node_modules", "build"]
+}
