@@ -1,6 +1,6 @@
 # Finance App 📚
 
-It helps local stores to review your weekly sells, creating useful metrics around the data that you provide.
+It helps local stores to review their weekly sells, creating useful metrics around the data that is provided.
 
 ## Simple Stack
 
