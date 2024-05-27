@@ -1,12 +1,8 @@
-import React from 'react';
-
-export default function WeekList() {
-  const nowDay = new Date().getDate();
-  const weekDays = [
-    ...Array.from({ length: 3 }, (_, index) => nowDay + index),
-    ...Array.from({ length: 3 }, (_, index) => index + 1).map((i) => nowDay - i)
-  ].sort();
-
+type props = {
+  weekDays: number[];
+  nowDay: number;
+};
+export default function WeekList({ weekDays, nowDay }: props) {
   return (
     <section>
       <h3>Days of the week</h3>
