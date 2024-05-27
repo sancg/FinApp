@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 // import { LinkIcon } from '@heroicons/react/20/solid';
-import ErrorHandler from '../components/ErrorHandler';
+// import ErrorHandler from '../components/ErrorHandler';
 
 export default function NotFound() {
   return (
@@ -14,7 +14,7 @@ export default function NotFound() {
           </Link>
         </span>
       </p>
-      <ErrorHandler />
+      {/* <ErrorHandler /> */}
     </>
   );
 }
