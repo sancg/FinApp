@@ -3,6 +3,8 @@ import { Outlet } from 'react-router-dom';
 import ThemeToggleButton from '../components/ToggleTheme';
 import { getThemeStyles } from '../utils/theme';
 import { useTheme } from '../hooks/ThemeContext';
+import MobileBar from '../components/MobileBar';
+import { Box } from '@mui/material';
 
 export default function Layout() {
   const { theme } = useTheme();
@@ -18,8 +20,12 @@ export default function Layout() {
         <ThemeToggleButton />
       </nav>
       <main>
-        <Outlet />
+        <Box sx={{ bgcolor: styles.background, mb: '50px' }}>
+          <Outlet />
+        </Box>
+        <Box sx={{ pb: '50px', mb: '50px', bgcolor: styles.background }}></Box>
       </main>
+      <MobileBar />
     </div>
   );
 }
