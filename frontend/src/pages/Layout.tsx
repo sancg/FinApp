@@ -4,7 +4,7 @@ import ThemeToggleButton from '../components/ToggleTheme';
 import { getThemeStyles } from '../utils/theme';
 import { useTheme } from '../hooks/ThemeContext';
 import MobileBar from '../components/MobileBar';
-import { Box, Paper } from '@mui/material';
+import { Box } from '@mui/material';
 
 export default function Layout() {
   const { theme } = useTheme();
@@ -23,7 +23,7 @@ export default function Layout() {
         <Box sx={{ bgcolor: styles.background, mb: '50px' }}>
           <Outlet />
         </Box>
-        <Paper square sx={{ pb: '50px', mb: '50px', bgcolor: styles.background }}></Paper>
+        <Box sx={{ pb: '50px', mb: '50px', bgcolor: styles.background }}></Box>
       </main>
       <MobileBar />
     </div>
