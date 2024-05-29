@@ -1,2 +1,2 @@
-import { db } from '../../../config/sqlite';
+import db from '@/config/dbSetup';
 export { db };

@@ -28,34 +28,30 @@ CREATE TABLE
     );
 
 -- Insert sample data
-INSERT INTO
-    Product (name, price)
-VALUES
-    ('Product 1', 10.0);
-
-INSERT INTO
-    Product (name, price)
-VALUES
-    ('Product 2', 15.0);
-
-INSERT INTO
-    Product (name, price)
-VALUES
-    ('Product 3', 20.0);
-
--- Insert Sell sample data
-INSERT INTO
-    Sell (source, total_price, date)
-VALUES
-    ('Transferencia', 50.0, '2023-05-01T10:00:00'),
-    ('Rappi', 75.0, '2023-05-05T15:30:00'),
-    ('Efectivo', 30.0, '2023-05-07T09:45:00');
-
--- Insert Sell -> Product joins
-INSERT INTO
-    SellProduct (sell_id, product_id, quantity, price)
-VALUES
-    (1, 1, 2, 20.0),
-    (1, 2, 1, 30.0),
-    (2, 2, 3, 45.0),
-    (3, 3, 1, 30.0);
+-- INSERT INTO
+--     Product (name, price)
+-- VALUES
+--     ('Product 1', 10.0);
+-- INSERT INTO
+--     Product (name, price)
+-- VALUES
+--     ('Product 2', 15.0);
+-- INSERT INTO
+--     Product (name, price)
+-- VALUES
+--     ('Product 3', 20.0);
+-- -- Insert Sell sample data
+-- INSERT INTO
+--     Sell (source, total_price, date)
+-- VALUES
+--     ('Transferencia', 50.0, '2023-05-01T10:00:00'),
+--     ('Rappi', 75.0, '2023-05-05T15:30:00'),
+--     ('Efectivo', 30.0, '2023-05-07T09:45:00');
+-- -- Insert Sell -> Product joins
+-- INSERT INTO
+--     SellProduct (sell_id, product_id, quantity, price)
+-- VALUES
+--     (1, 1, 2, 20.0),
+--     (1, 2, 1, 30.0),
+--     (2, 2, 3, 45.0),
+--     (3, 3, 1, 30.0);

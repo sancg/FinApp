@@ -13,9 +13,12 @@
     }
   },
   "ts-node": {
+    "require": ["tsconfig-paths/register"],
     "compilerOptions": {
-      // Ths would overwrite the behavior of tsc
-      //"module": "commonjs"
+      "baseUrl": "./",
+      "paths": {
+        "@/*": ["src/*"]
+      }
     }
   },
   //"include": ["src/api/**/*.ts", "src/app.ts"],
